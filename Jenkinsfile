@@ -4,6 +4,7 @@
          stage('Build') {
              steps {
                   sh './garadlew build'
+                  archiveArtifacts artifacts: 'dist/*'
              }
          }
      }
