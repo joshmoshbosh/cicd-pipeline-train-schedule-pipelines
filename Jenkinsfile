@@ -3,7 +3,7 @@
      stages {
          stage('Build') {
              steps {
-                  sh './garadlew build'
+                  sh './gradlew build'
                   archiveArtifacts artifacts: 'dist/*'
              }
          }
